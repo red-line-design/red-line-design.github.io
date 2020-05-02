@@ -205,6 +205,8 @@ footer svg {
 footer p{
   font-size: 1em;
 }
+
+
 /* grid system for desktop */
 @media (min-width:1040px){
   .container{
@@ -229,4 +231,8 @@ footer p{
     .icon svg {
       width: 100%;
       padding-left:20px;
+    }
+
+    footer {
+      padding-left: 330px;
     }
