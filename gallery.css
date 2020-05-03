@@ -22,6 +22,7 @@
     grid-template-areas:
           "icon"
           "nav"
+          "content"
           "photos"
           "footer";
   }
@@ -267,7 +268,7 @@ footer{
 h1{
   color:white;
   font-size: 100px;
-  padding-left: -20px; 
+  padding-right: -20px; 
 }
     /* .bigText {
         font-size: 2em;
