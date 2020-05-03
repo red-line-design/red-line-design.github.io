@@ -69,7 +69,7 @@ nav ul {
   color: #353535;
   background-image:url(assets/3-new-header.svg);
   background-repeat:no-repeat;
-  
+  margin-bottom:20%;
 }
 nav li{
   padding: 1em 0;
@@ -171,7 +171,8 @@ a:visited {
   animation-duration: 1.5s;
   animation-fill-mode: both;
   -webkit-animation-duration: 1.5s;
-  -webkit-animation-fill-mode: both
+  -webkit-animation-fill-mode: both;
+  /* margin-top: 15%; */
 }
 
 .animatedFadeInUp {
@@ -296,8 +297,45 @@ footer p{
       position: relative;
       background-image: url(assets/desktop-navbar.svg);
     }
-    /* .icon svg {
-      width: 100%;
-      padding-left:20px;
-      background-color: #353535;
-    } */
+
+      /* Animation */
+
+/* @keyframes fadeInUp {
+  from {
+      transform: translate3d(0,40px,0)
+  }
+
+  to {
+      transform: translate3d(0,0,0);
+      opacity: 1
+  }
+}
+
+@-webkit-keyframes fadeInUp {
+  from {
+      transform: translate3d(0,40px,0)
+  }
+
+  to {
+      transform: translate3d(0,0,0);
+      opacity: 1
+  }
+}
+
+.animated {
+  animation-duration: 1.5s;
+  animation-fill-mode: both;
+  -webkit-animation-duration: 1.5s;
+  -webkit-animation-fill-mode: both;
+  padding-top: 100px;
+}
+
+.animatedFadeInUp {
+  opacity: 0;
+}
+
+.fadeInUp {
+  opacity: 0;
+  animation-name: fadeInUp;
+  -webkit-animation-name: fadeInUp;
+} */
