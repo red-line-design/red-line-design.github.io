@@ -154,6 +154,11 @@ a:visited {
   background-color: red;
   padding: 15px;
 }
+
+h2{
+  color:white;
+  font-size: 55px;
+}
 /* .paragraph2{
   text-indent: 2em;
 } */
@@ -235,4 +240,8 @@ footer p{
 
     footer {
       padding-left: 330px;
+    }
+
+    h2{
+      font-size: 72px;
     }

@@ -106,40 +106,72 @@
       <!-- where my about me statement starts -->
 <div class="content">      
       <!-- Slideshow container -->
-  <div class="slideshow-container">
+      <h2>SHADOWS</h2>
+      <div class="slideshow-container">
+    
+        <div class="mySlides fade">
+          <img src="assets/xbox-controller.jpg" width="400px">
+        </div>
+        
+        <div class="mySlides fade">
+          <img src="assets/swirl-shadow.jpg" width="400px">
+        </div>
+        
+        <div class="mySlides fade">
+         <img src="assets/shadow-book.jpg" width="400px" >
+        </div>
+    
+        <div class="mySlides fade">
+          <img src="assets/switch-controller.jpg" width="400px" >
+         </div>
 
-  <!-- Full-width images with number and caption text -->
-  <div class="mySlides fade">
-    <img src="assets/swirl-shadow.jpg" style="width:100%">
-  </div>
-
-  <div class="mySlides fade">
-    <img src="assets/shadow-book.jpg" style="width:100%">
-  </div>
-
-  <div class="mySlides fade">
-    <img src="assets/geometric-rock.jpg" style="width:100%">
-  </div>
-  <div class="mySlides fade">
-    <img src="assets/switch-controller.jpg" style="width:100%">
-  </div>
-  <div class="mySlides fade">
-    <img src="assets/xbox-controller.jpg" style="width:100%">
-  </div>
-  <!-- Next and previous buttons -->
-  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-  <a class="next" onclick="plusSlides(1)">&#10095;</a>
-</div>
-<br>
-
-<!-- The dots/circles -->
-<div style="text-align:center">
-  <span class="dot" onclick="currentSlide(1)"></span>
-  <span class="dot" onclick="currentSlide(2)"></span>
-  <span class="dot" onclick="currentSlide(3)"></span>
-  <span class="dot" onclick="currentSlide(4)"></span>
-  <span class="dot" onclick="currentSlide(5)"></span>
-</div>
+         <div class="mySlides fade">
+          <img src="assets/geometric-rock.jpg" width="400px" >
+         </div>
+        
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        
+        </div>
+        <br>
+        
+        <div style="text-align:center">
+          <span class="dot" onclick="currentSlide(1)"></span> 
+          <span class="dot" onclick="currentSlide(2)"></span> 
+          <span class="dot" onclick="currentSlide(3)"></span> 
+          <span class="dot" onclick="currentSlide(4)"></span>
+          <span class="dot" onclick="currentSlide(5)"></span>
+        </div>
+    
+    <script src="" async defer></script>
+    <script>
+        var slideIndex = 1;
+        showSlides(slideIndex);
+        
+        function plusSlides(n) {
+          showSlides(slideIndex += n);
+        }
+        
+        function currentSlide(n) {
+          showSlides(slideIndex = n);
+        }
+        
+        function showSlides(n) {
+          var i;
+          var slides = document.getElementsByClassName("mySlides");
+          var dots = document.getElementsByClassName("dot");
+          if (n > slides.length) {slideIndex = 1}    
+          if (n < 1) {slideIndex = slides.length}
+          for (i = 0; i < slides.length; i++) {
+              slides[i].style.display = "none";  
+          }
+          for (i = 0; i < dots.length; i++) {
+              dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex-1].style.display = "block";  
+          dots[slideIndex-1].className += " active";
+        }
+        </script>
         
   <p>
     For this project my goal was to pay attention to the shadows in different objects and scenes. In the photo with the book you can see that each section of the book has different kinds of shadows. There is a photo of a sculpture, in that photo I really wanted to see the kinds of shadows that were made with the very geometric shapes. For the photo of the other sculpture outside of the school I wanted to show the contrast between the different parts of the sculpture. Lastly, in the photo of the xbox controllers I am showing the different shadows that can be made with these kinds of objects.

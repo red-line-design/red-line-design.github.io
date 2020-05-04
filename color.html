@@ -105,47 +105,67 @@
       </nav> 
           <!-- Slideshow container -->
 <div class=content>
+  <h2>COLOR</h2>
   <div class="slideshow-container">
 
-    <!-- Full-width images with number and caption text -->
     <div class="mySlides fade">
-      <!-- <div class="numbertext">1 / 4</div> -->
-        <img src="assets/green-golf.jpg" style="width:100%">
-      <!-- <div class="text">Caption Text</div> -->
+      <img src="assets/green-golf.jpg" width="400px">
+    </div>
+    
+    <div class="mySlides fade">
+      <img src="assets/blue-lemon.jpg" width="400px">
+    </div>
+    
+    <div class="mySlides fade">
+     <img src="assets/indigo-phones.jpg" width="400px" >
     </div>
 
     <div class="mySlides fade">
-      <!-- <div class="numbertext">2 / 4</div> -->
-        <img src="assets/blue-lemon.jpg" style="width:100%">
-      <!-- <div class="text">Caption Two</div> -->
-    </div>
-
-    <div class="mySlides fade">
-      <!-- <div class="numbertext">3 / 4</div> -->
-        <img src="assets/indigo-phones.jpg" style="width:100%">
-      <!-- <div class="text">Caption Three</div> -->
-    </div>
-
-    <div class="mySlides fade">
-      <!-- <div class="numbertext">4 / 4</div> -->
-          <img src="assets/red-trooper.jpg" style="width:100%">
-      <!-- <div class="text">Caption Three</div> -->
-    </div>
-
-    <!-- Next and previous buttons -->
+      <img src="assets/red-trooper.jpg" width="400px" >
+     </div>
+    
     <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
     <a class="next" onclick="plusSlides(1)">&#10095;</a>
-  </div>
     
-  <br>
+    </div>
+    <br>
+    
+    <div style="text-align:center">
+      <span class="dot" onclick="currentSlide(1)"></span> 
+      <span class="dot" onclick="currentSlide(2)"></span> 
+      <span class="dot" onclick="currentSlide(3)"></span> 
+      <span class="dot" onclick="currentSlide(4)"></span>
+    </div>
 
-  <!-- The dots/circles -->
-  <div style="text-align:center">
-    <span class="dot" onclick="currentSlide(1)"></span>
-    <span class="dot" onclick="currentSlide(2)"></span>
-    <span class="dot" onclick="currentSlide(3)"></span>
-    <span class="dot" onclick="currentSlide(4)"></span>
-  </div>
+<script src="" async defer></script>
+<script>
+    var slideIndex = 1;
+    showSlides(slideIndex);
+    
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+    
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+    
+    function showSlides(n) {
+      var i;
+      var slides = document.getElementsByClassName("mySlides");
+      var dots = document.getElementsByClassName("dot");
+      if (n > slides.length) {slideIndex = 1}    
+      if (n < 1) {slideIndex = slides.length}
+      for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";  
+      }
+      for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";  
+      dots[slideIndex-1].className += " active";
+    }
+    </script>
 
   <p>During this Project I really wanted to experiment with colored light and to see how it worked off of certain objects. Some of the techniques that I used was taking colored binder dividers on top of an LED light board. I also tried using the colored screens and put them on top of my phone light and shining it up into bottles. This is what is done in “Blue Lemon”. 
   </p>

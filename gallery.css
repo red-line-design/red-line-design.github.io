@@ -23,12 +23,11 @@
           "icon"
           "nav"
           "content"
-          "photos"
           "footer";
   }
   /* @media (max-width:735px){ */
      
-    .image-gallery {
+    /* .image-gallery {
         padding-bottom: 200%;
         grid-template-columns: 1fr minmax(400px, 1fr) 1fr;
         grid-template-areas:
@@ -37,12 +36,12 @@
         ".c."
         ".d."
         ;
-    }
+    } */
   /* step one: name your sections */
   /* the sections of my about me page */
   .icon,
    nav,
-   .photos,
+   .content,
    footer{
      padding-left: 3em;
      padding-right: 3em;
@@ -142,9 +141,18 @@
     max-width:2000px;
     margin: 0 auto;
     text-align: center;
-    padding-top: 50px;
+    padding-top: 50px; 
+    padding-left: 15%;
 } 
 
+.content p{
+  color:white;
+  padding-right: 33%;
+  padding-bottom:60px;
+  padding-top: 20px;
+  font-size: 70px;
+  font-weight: 800;
+}
  .content img{
     width: 20%;
     /* border-radius: 20%;
@@ -152,24 +160,6 @@
     transform: scale(2);
   }
 
-.photos{
-    grid-area: photos;
-    /* max-width:2000px;
-    margin: 0 auto;
-    padding-top: 50px; */
-}  
-
-
-
-/* .photos img{
-    width:20%;
-     border-radius: 20%;
-    margin-bottom: 4em;
-    text-align: center;
-    display: inline-block;
-    padding: 175px;
-    scale: 150%;
-} */
 /* FOOTER */
 footer{
         grid-area:footer;
@@ -230,7 +220,26 @@ footer{
 
         ;
     }
-    
+    @media (max-width:735px){
+      nav {
+          padding-left: 20;
+      }
+ 
+     .image-gallery {
+         padding-bottom: 5%;
+         padding-right: 13%;
+         grid-template-columns: 1fr minmax(400px, 1fr) 1fr;
+         grid-template-areas:
+         ".a."
+         ".b."
+         ".c."
+         ".d.";
+     }
+     .content p{
+       padding-left: 10%;
+     }
+
+  }  
     .box-styling {
         height: 350px;
         background-color: rgb(110, 110, 110);
@@ -243,7 +252,6 @@ footer{
     }
     .box1 {
         grid-area: a;
-        /* 5 */
     
     }
     
@@ -292,7 +300,6 @@ h1{
         overflow: hidden;
         top: 0;
         left: 0;
-        color: gray
       }
       
       .hovereffect img {
@@ -302,12 +309,11 @@ h1{
         position: relative;
         -webkit-transition: all 0.4s ease-in;
         transition: all 0.4s ease-in;
-        /* color: gray */
       }
       
       .hovereffect:hover img {
-        filter:blur(3px);
-        -webkit-filter: blur(3px);
+        filter:  blur(3px);
+        -webkit-filter: grayscale(1) blur(3px);
         -webkit-transform: scale(1.2);
         -ms-transform: scale(1.2);
         transform: scale(1.2);
@@ -348,6 +354,7 @@ h1{
         font-family: 'Roboto Slab', serif;
         font-weight: 400;
         margin-top:100px;
+        font-size: 30px;
       }
       
       .hovereffect:hover p, .hovereffect:hover h2{
@@ -367,8 +374,8 @@ h1{
           grid-template-rows: auto;
           grid-template-areas:
                 "icon content"
-                "nav photos"
-                "nav photos"
+                "nav content"
+                "nav content"
                 "footer footer";
         } 
 
@@ -387,14 +394,8 @@ h1{
             width: 100%;
             padding-left:20px;
              }
-          .content{
-              /* background-image:url(assets/redline-photo.svg);
-              background-repeat:no-repeat; */
-          }  
-          /* .photos img{
-            padding:150px;
-          } */
-          @media (max-width:1100px){
+          
+          /* @media (max-width:1140px){
             .image-gallery {
               padding-bottom: 0px;
                 margin-bottom: 600px;
@@ -404,9 +405,12 @@ h1{
                 ". c d ."
                 ;
             }
-         }
+         } */
          
-         @media (max-width:735px){
+         /* @media (max-width:735px){
+          nav {
+              padding-left: 0;
+          }
      
          .image-gallery {
              padding-bottom: 200%;
@@ -415,6 +419,6 @@ h1{
              ".a."
              ".b."
              ".c."
-             ".d."
-             ;
+             ".d.";
          }
+      }   */
