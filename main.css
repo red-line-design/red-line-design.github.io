@@ -140,8 +140,9 @@ a:visited {
 }
 
 .content svg{
-  margin-top: -100px;
+  margin-top: -20px;
   transform: scale(1.3)
+
 }
   /* Animation */
 
@@ -296,6 +297,12 @@ footer p{
       flex-direction: column;
       position: relative;
       background-image: url(assets/desktop-navbar.svg);
+    }
+
+    .content svg{
+      margin-top: -100px;
+      transform: scale(1.3)
+      
     }
 
       /* Animation */
